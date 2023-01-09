@@ -31,8 +31,8 @@
 
 [Dump(6) PCAP](dump(6).pcapng)
 
-[Dump(7) PCAP](dump(7).pcapng.pcapng)
+[Dump(7) PCAP](dump(7).pcapng)
 
-[Dump(8) PCAP](dump(8).pcapng.pcapng)
+[Dump(8) PCAP](dump(8).pcapng)
 
 [Dalton Instance](https://dalton.centraliowacybersec.com)
