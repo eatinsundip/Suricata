@@ -26,6 +26,10 @@ This is why I wrote a new signature to detect on the client>server pattern I kee
 
 Once decoded an human readable, they always seem to come out very similar.
 
+I am not certain if the data being sent is always there so I chose not to sig on that.
+
+It could be used for a mopre pecific alert if FPs are concering.
+
 ```
 /bot5861146625:AAEHo1wi939JhVuLzstg9mWqpsc_ntWfbTQ/sendPhoto?chat_idP58531872&caption=❕ User connected ❕
 • ID: a683d399ec4da81b2f69cbd3e01b93a58b431a4e
