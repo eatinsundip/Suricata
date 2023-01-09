@@ -4,9 +4,11 @@
 
 
 ## Resources
-[https://tria.ge/230107-eynj2acf87/behavioral2]
-[https://tria.ge/230107-fa3jqagb8t/behavioral3]
-[https://app.any.run/tasks/f314829e-d378-445d-8749-43a465121737/]
+https://tria.ge/230107-eynj2acf87/behavioral2
+
+https://tria.ge/230107-fa3jqagb8t/behavioral3
+
+https://app.any.run/tasks/f314829e-d378-445d-8749-43a465121737/
 
 If I don't have anything here just let me know.
 
