@@ -23,6 +23,9 @@ I generated a Flowsynth PCAP and built a signature based on it since the TLS was
 ```alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"ET MALWARE DCRAT Activity"; flow:established,to_server; http.uri; content:"/bot"; startswith; content:"/sendPhoto?chat_id="; within:75; pcre:"/^\/bot[0-9]{9}/"; pcre:"/chat_id=[0-9]{9,10}/"; http.host; content:"api.telegram.org"; reference:url,https://tria.ge/230107-eynj2acf87/behavioral2; classtype:trojan-activity; sid:1; rev:1;)```
 
 [Flowsynth PCAP](flowsynth.pcapng)
+
 [Re-Ran Full PCAP](raran-full.pcapng)
+
 [Old Run PCAP](old-run.pcapng)
+
 [Dalton Instance](https://dalton.centraliowacybersec.com)
