@@ -26,9 +26,6 @@ This is why I wrote a new signature to detect on the client>server pattern I kee
 
 Once decoded an human readable, they always seem to come out very similar.
 
-I am not certain if the data being sent is always there so I chose not to sig on that.
-
-It could be used for a mopre pecific alert if FPs are concering.
 
 ```
 /bot5861146625:AAEHo1wi939JhVuLzstg9mWqpsc_ntWfbTQ/sendPhoto?chat_idP58531872&caption=❕ User connected ❕
@@ -49,7 +46,8 @@ I generated a Flowsynth PCAP and built a signature based on it since the TLS was
 
 ## Signature
 
-```alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"ET MALWARE DCRAT Activity"; flow:established,to_server; http.uri; content:"/bot"; startswith; content:"/sendPhoto?chat_id="; within:75; pcre:"/^\/bot[0-9]{9}/"; pcre:"/chat_id=[0-9]{9,10}/"; http.host; content:"api.telegram.org"; reference:url,https://tria.ge/230107-eynj2acf87/behavioral2; classtype:trojan-activity; sid:1; rev:1;)```
+```alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"ET MALWARE DCRAT Activity"; flow:established,to_server; http.uri; content:"/bot";startswith; content:"|2f|sendPhoto|3f|chat|5f|id|3d|"; distance:0; content:"caption|3d e2 9d 95 20|User|20|connected|20 e2 9d 95|"; distance:10; within:65; content:"|e2 80 a2 20|ID|3a 20|"; distance:0; within:65; content:"|e2 80 a2 20|Comment|3a 20|"; distance:40; within:35; content:"|0a 0a e2 80 a2 20|User|20|Name|3a 20|"; distance:11; within:27; content:"|e2 80 a2 20|PC|20|Name|3a 20|"; distance:0; within:100; content:"|e2 80 a2 20|OS|20|Info|3a 20|"; distance:0; within:100; content:"|e2 80 a2 20|IP|3a 20|"; distance:0; within:100; content:"|20|GEO|3a 20|"; distance:7; within:20;  content:"|e2 80 a2 20|Working|20|Directory|3a 20|"; distance:0; within:100; http.host; content:"api.telegram.org"; fast_pattern; reference:url,https://tria.ge/230107-eynj2acf87/behavioral2; classtype:trojan-activity; sid:1; rev:1;)```
+
 
 [Flowsynth PCAP](flowsynth.pcap)
 
