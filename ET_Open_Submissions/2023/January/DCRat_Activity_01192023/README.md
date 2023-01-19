@@ -35,7 +35,7 @@ I generated a Flowsynth PCAP and built a few signatures from the PCAP.
 
 ```alert http $EXTERNAL_NET any -> $HOME_NET any (msg:"ET TROJAN DCRAT Response Body 2)"; flow:established,from_server; http.stat_code; content:"200"; bsize:3; http.response_body; content:"User|20|connected"; fast_pattern; content:"|20|ID|3a 20|"; distance:14; within:6; content:"|20|Comment|3a 20|"; distance:40; within:20; content:"|20|User|20|Name|3a 20|"; distance:15; within:20; content:"|20|PC|20|Name|3a 20|"; within:100; content:"|20|OS|20|Info|3a 20|"; within:100; content:"|20|IP|3a 20|"; within:100; content:"|20|GEO|3a 20|"; distance:15; within:12; content:"|20|Working|20|Directory|3a 20|"; within:100; reference:url,https://tria.ge/230107-eynj2acf87/behavioral2; classtype:trojan-activity; sid:2; rev:1;)```
 
-[Dalton Job ID](https://dalton.centraliowacybersec.com/dalton/job/de95e792b5056255)
+[Dalton Job ID](https://dalton.centraliowacybersec.com/dalton/coverage/job/de95e792b5056255)
 
 ## Downloads
 
