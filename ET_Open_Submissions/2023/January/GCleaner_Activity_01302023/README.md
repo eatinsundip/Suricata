@@ -102,7 +102,7 @@ alert http $HOME_NET any -> $EXTERNAL_NET any msg:"ET TROJAN GCleaner (Beacon 3)
 
 I am not entirely sure what the quote on quote **Beacons** are. A few look like beacons since they were consistant but the 5th sig does not. I just wan't sure what to call it. It's definitely abnormal to me.
 
-[Dalton Job ID](https://dalton.centraliowacybersec.com/dalton/coverage/job/254fa282ed33d01e)
+[Dalton Job ID](https://dalton.centraliowacybersec.com/dalton/coverage/job/7e0c34877ec12896)
 
 ## Downloads
 
