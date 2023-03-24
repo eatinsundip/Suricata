@@ -79,6 +79,10 @@ I received a Filebeat IDS alert for an **Attempted Administrator Privilege Gain*
 }
 ```
 
+## Rule
+
+```alert udp any any -> [$HOME_NET,$HTTP_SERVERS] any (msg:\"ET EXPLOIT Possible Apache log4j RCE Attempt - 2021/12/12 Obfuscation Observed M2 (udp) (CVE-2021-44228)\"; content:\"|24 7b|\"; content:\"|24 7b 3a 3a|\"; within:100; fast_pattern; reference:cve,2021-44228; classtype:attempted-admin; sid:2034674; rev:2; metadata:attack_target Server, created_at 2021_12_12, cve CVE_2021_44228, deployment Perimeter, deployment Internal, former_category EXPLOIT, signature_severity Major, tag Exploit, updated_at 2022_01_11;)```
+
 This is all Mullvad wireguard traffic to and from a host on my network.
 
 This section of the message is the section that seems to be tripping the false positive.
