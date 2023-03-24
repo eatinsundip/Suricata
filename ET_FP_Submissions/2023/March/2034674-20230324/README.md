@@ -6,6 +6,7 @@
 
 I received a Filebeat IDS alert for an **Attempted Administrator Privilege Gain** with a possible Apache log4j RCE attempt.
 
+I think this was all a massive coincidence once I looked at it.
 
 ## Full Message below
 
