@@ -10,7 +10,7 @@ If another alert can be added, I believe the biggest difference is the Apache Fl
 
 Something more like this?
 
-```alert http $EXTERNAL_NET any -> $HTTP_SERVERS any (msg:"ET EXPLOIT Apache Flink Directory Traversal (CVE-2020-17519)"; flow:established,to_server; http.method; content:"GET"; http.uri.raw; content:"/jobmanager/logs/" startswith; content:"..%252F..%252F"; nocase; fast_pattern; reference:url,https://www.vicarius.io/vsociety/posts/cve-2020-17519-apache-flink-directory-traversal-vulnerability; reference:cve,2020-17519; classtype:attempted-admin; sid:1; rev:1; metadata:affected_product Apache Flink, attack_target Server, created_at 2024_05_24, cve CVE_2020_17519, deployment Perimeter, former_category EXPLOIT, performance_impact Low, signature_severity Major, updated_at 2024_05_24;)```
+```alert http $EXTERNAL_NET any -> $HTTP_SERVERS any (msg:"ET EXPLOIT Apache Flink Directory Traversal (CVE-2020-17519)"; flow:established,to_server; http.method; content:"GET"; http.uri.raw; content:"/jobmanager/logs/"; startswith; content:"..%252f..%252f"; fast_pattern; reference:url,https://www.vicarius.io/vsociety/posts/cve-2020-17519-apache-flink-directory-traversal-vulnerability; reference:cve,2020-17519; classtype:attempted-admin; sid:1; rev:1; metadata:affected_product VMware, attack_target Server, created_at 2024_05_24, cve CVE_2020_17519, deployment Perimeter, former_category EXPLOIT, performance_impact Low, signature_severity Major, updated_at 2024_05_24;)```
 
 ## Resources
 
