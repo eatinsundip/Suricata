@@ -32,4 +32,6 @@ The exploit however only works with `/job-manager/logs`
 
 They aren't even using the same path.
 
+I haven't put in the effort to look at the code. If I do, I am not sure what I would find, I just find it interesting more than anything.
+
 ![image](https://github.com/eatinsundip/Suricata/assets/43767555/8bd1f253-7138-4862-9a79-f06ec628521c)
