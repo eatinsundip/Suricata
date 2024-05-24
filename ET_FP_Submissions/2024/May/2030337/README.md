@@ -6,7 +6,7 @@ I tested the Apache Flink (CVE-2020-17519) last night in my lab and found there 
 
 I don't know what ET procedure is for this but I thought I would just bring it up.
 
-If another alert can be added, I believe the biggest difference is the Apache Flink exploit requires the path top start with `/jobmanager/logs/..%252f`
+If another alert can be added, I believe the biggest difference is the Apache Flink exploit requires the path to start with `/jobmanager/logs/..%252f`
 
 Something more like this?
 
