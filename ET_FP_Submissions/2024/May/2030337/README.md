@@ -14,11 +14,11 @@ Something more like this?
 
 ## Resources
 
+Replicated exploit in Docker with `docker run -d --name flink-jobmanager -p 8081:8081 flink:1.11.2 jobmanager`
+
 [Job Link](https://dalton.securitymidwest.net/dalton/coverage/job/582843c84741da8c)
 
 [Pcap Zip](https://github.com/eatinsundip/Suricata/files/15434992/apache.zip)
-
-Replicated exploit in Docker with `docker run -d --name flink-jobmanager -p 8081:8081 flink:1.11.2 jobmanager`
 
 ## Notes
 
