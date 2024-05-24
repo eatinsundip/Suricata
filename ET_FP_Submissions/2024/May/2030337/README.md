@@ -17,3 +17,17 @@ Something more like this?
 [Job Link](https://dalton.securitymidwest.net/dalton/coverage/job/582843c84741da8c)
 
 [Pcap Zip](https://github.com/eatinsundip/Suricata/files/15434992/apache.zip)
+
+## Notes
+
+Something else I noticed..
+
+When browsing the flink site, the jobmanager url you get by browsing is `/jobmanager/logs`
+
+![image](https://github.com/eatinsundip/Suricata/assets/43767555/548c1903-d553-420c-a31d-3f72a2a32c87)
+
+The exploit however only works with `/job-manager/logs`
+
+They aren't even using the same path.
+
+![image](https://github.com/eatinsundip/Suricata/assets/43767555/8bd1f253-7138-4862-9a79-f06ec628521c)
